@@ -1,0 +1,25 @@
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: auto;
+  width: auto;
+  max-width: 900px;
+
+  h1, div, app-map-directions-list {
+    text-align: center;
+
+    input, button {
+      width: 190px;
+      margin: 10px;
+      padding: 9px;
+      font-size: 16px;
+      border-radius: 9px;
+    }
+
+    button {
+      color: rgb(240, 240, 240);
+      background-color: rgb(26, 135, 26);
+    }
+  }
+}

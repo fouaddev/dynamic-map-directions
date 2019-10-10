@@ -1,0 +1,11 @@
+<div id='wrapper'>
+  <h1>MapQuest</h1>
+
+  <div>
+    <input (keyup)='dynamicDirections(fromInput.value, toInput.value)' type='text' [(ngModel)]='fromLocation' #fromInput>
+    <input (keyup)='dynamicDirections(fromInput.value, toInput.value)' type='text' [(ngModel)]='toLocation' #toInput>
+    <button (click)='clickedToSearch(fromInput.value, toInput.value)'>Get Directions</button>
+  </div>
+
+  <app-map-directions-list [itemsList]='data'></app-map-directions-list>
+</div>

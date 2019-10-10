@@ -1,0 +1,20 @@
+<table *ngIf='itemsList'>
+  <thead>
+    <tr>
+      <th colspan='5'>
+        <div>Distance: {{ itemsList.route.distance | number: '1.2-2' }} mile</div>
+        <div>Time: {{ itemsList.route.formattedTime }}</div>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor='let item of itemsList.route.legs[0].maneuvers; let i = index'>
+      <td><img src="{{ item.iconUrl }}"></td>
+      <td>Step {{ i + 1 }}</td>
+      <td id='direction'><a href='{{ item.mapUrl }}' target='_blanc'>{{ item.narrative }}</a></td>
+      <td><img src='{{ item.mapUrl }}'></td>
+      <td>{{ item.distance | number: '1.2-2' }} mile</td>
+    </tr>
+  </tbody>
+</table>
