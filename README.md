@@ -1,4 +1,6 @@
-# Hw5Part1
+# Map Directions App
+
+This is a responsive web app that features dynamic address search asynchronously, built with Angular 8.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
