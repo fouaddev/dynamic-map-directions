@@ -1,6 +1,6 @@
 # Map Directions App
 
-This is a responsive web app that features dynamic address search that gives you map directions asynchronously, built with Angular 8.
+This is a responsive web app that features dynamic address search. It gives you map directions asynchronously, right after you stop typing. It's built with Angular 8.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
